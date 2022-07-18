@@ -1,0 +1,6 @@
+.selection-list, mat-card {
+  min-width: 30%;
+}
+button {
+  margin-left: auto;
+}

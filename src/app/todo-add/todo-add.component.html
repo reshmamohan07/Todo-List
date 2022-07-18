@@ -1,0 +1,19 @@
+
+<div id="textb" class="row">
+  <div class="col-sm-12 d-flex align-items-center flex-column">
+    <h2> {{ label }} </h2>
+    <form class="example-form">
+      <mat-form-field class="example-full-width"  appearance="outline">
+        <mat-label>Enter ToDo Item</mat-label>
+        <input name="toDoInput" matInput placeholder="Ex. Study PSC"
+        [(ngModel)]="toDoInput"
+        autocomplete="off"
+        (keyup.enter)="saveTodoItem()">
+      </mat-form-field>
+    </form>
+
+  </div>
+</div>
+<div>
+
+</div>

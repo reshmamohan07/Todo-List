@@ -1,0 +1,13 @@
+<div class="col-sm-12 d-flex flex-column" *ngIf="list?.length">
+  <div class="col-sm-6 align-self-center">
+    <mat-card>
+      <mat-selection-list #shoes class="selection-list" [(ngModel)]="selectedOptions">
+        <mat-list-option *ngFor="let todo of list; let i = index" [value]="i">
+          {{todo}}
+        </mat-list-option>
+      </mat-selection-list>
+    </mat-card>
+    <button mat-raised-button color="primary" class="mt-3 d-flex ml-auto" (click)="moveToComplete()">Move to Completed List</button>
+  </div>
+
+</div>

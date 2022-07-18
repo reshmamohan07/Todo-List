@@ -1,0 +1,8 @@
+<div>
+  <h1>To Do App works!</h1>
+</div>
+
+<app-todo-add (addedInput)="newToDoInput($event)"></app-todo-add>
+
+<app-todo-list [list]="todoList" (todoListChange)="moveToCompletedList($event)"></app-todo-list>
+<app-completed-list [completedList]="completedList" (todoListAgain)="moveToTodoList($event)"></app-completed-list>

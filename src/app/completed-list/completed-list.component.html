@@ -1,0 +1,16 @@
+
+<div class="col-sm-12 d-flex flex-column" *ngIf="completedList?.length">
+  <div class="col-sm-6 align-self-center">
+    <h2> Completed List </h2>
+    <mat-card>
+      <mat-selection-list class="selection-list" [(ngModel)]="completedItem">
+        <mat-list-option *ngFor="let todo of completedList; let i = index" [value]="i">
+          <del>{{todo}}</del>
+        </mat-list-option>
+      </mat-selection-list>
+    </mat-card>
+    <button mat-raised-button color="primary" class="mt-3 d-flex ml-auto" (click)="moveToTodoList()">Move to Todo List</button>
+  </div>
+
+</div>
+
